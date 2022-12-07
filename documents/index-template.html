@@ -1,0 +1,56 @@
+<div id="news" class="left-side">
+    <p class="h2">Nyheder</p>
+    <div class="inner-header" style="height: 300px">
+        <img style="width: 80px" src="/resources/loading.gif">
+    </div>
+</div>
+<div class="right-side">
+    <div>
+        <p class="h2">Tid</p>
+        <div class="time-weather-container">
+            <div>
+                <p class="date-timestamp" id="date"></p>
+                <p class="h2" id="timestamp"></p>
+                <p class="info-timestamp" id="timezone"></p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p class="h2">Vejr</p>
+        <div class="time-weather-container" style="margin-bottom: 10px">
+            <div class="current-weather">
+                <div class="weather-inner">
+                    <span class="material-symbols-rounded" id="weatherIcon"></span>
+                    <p id="currentWeather"></p>
+                </div>
+                <div>
+                    <p class="info-timestamp" id="weatherLocation">København</p>
+                </div>
+            </div>
+            <div class="sun-div">
+                <div class="sun-div-inner">
+                    <div>
+                        <span class="material-symbols-rounded">sunny</span>
+                    </div>
+                    <div class="sun-div-text">
+                        <p class="info-timestamp">Solopgang</p>
+                        <p class="h2" id="sunrise"></p>
+                    </div>
+                </div>
+                <div class="sun-div-inner">
+                    <div>
+                        <span class="material-symbols-rounded">dark_mode</span>
+                    </div>
+                    <div class="sun-div-text">
+                        <p class="info-timestamp">Solnedgang</p>
+                        <p class="h2" id="sunset"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="time-weather-container forecast">
+            <p class="h2" style="font-size: 12px">De næste 7 dage</p>
+            <div class="inner-forecast" id="forecast"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsie</title>
+    <script src="/scripts/index.js" type="module"></script>
+    <script src="/scripts/functions.js"></script>
+    <link rel="icon" type="image/x-icon" href="/resources/Newsie-favicon.png">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/view.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="nav-item">
+                <button id="home-btn"><span class="material-symbols-rounded active-nav">home</span></button>
+            </div>
+            <div class="nav-item">
+                <button id="favorite-btn"><span class="material-symbols-rounded">favorite</span></button>
+            </div>
+        </div>
+        <div class="view">
+            <div class="header">
+                <div class="inner-header">
+                    <div class="logo">
+                        <a href="/"><img src="/resources/Newsie-logo.png"></a>
+                    </div>
+                    <div>
+                        <form id="search-form" class="inner-header">
+                            <input id="search-query" class="form-input searchbar" type="text" placeholder="Søgeord (fx. 'World Cup')">
+                            <input id="search-publisher" class="form-input searchbar" type="text" placeholder="Udgiver (fx. 'forbes.com')">
+                            <button class="btn btn-secondary search-btn"><span style="font-size:18px" class="material-symbols-rounded">search</span></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="user" id="user-info"></div>
+            </div>
+            <div id="view" class="main">
+                <div id="news" class="left-side">
+                    <p class="h2">Nyheder</p>
+                    <div class="inner-header" style="height: 300px">
+                        <img style="width: 80px" src="/resources/loading.gif">
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div>
+                        <p class="h2">Tid</p>
+                        <div class="time-weather-container">
+                            <div>
+                                <p class="date-timestamp" id="date"></p>
+                                <p class="h2" id="timestamp"></p>
+                                <p class="info-timestamp" id="timezone"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="h2">Vejr</p>
+                        <div class="time-weather-container" style="margin-bottom: 10px">
+                            <div class="current-weather">
+                                <div class="weather-inner">
+                                    <span class="material-symbols-rounded" id="weatherIcon"></span>
+                                    <p id="currentWeather"></p>
+                                </div>
+                                <div>
+                                    <p class="info-timestamp" id="weatherLocation">København</p>
+                                </div>
+                            </div>
+                            <div class="sun-div">
+                                <div class="sun-div-inner">
+                                    <div>
+                                        <span class="material-symbols-rounded">sunny</span>
+                                    </div>
+                                    <div class="sun-div-text">
+                                        <p class="info-timestamp">Solopgang</p>
+                                        <p class="h2" id="sunrise"></p>
+                                    </div>
+                                </div>
+                                <div class="sun-div-inner">
+                                    <div>
+                                        <span class="material-symbols-rounded">dark_mode</span>
+                                    </div>
+                                    <div class="sun-div-text">
+                                        <p class="info-timestamp">Solnedgang</p>
+                                        <p class="h2" id="sunset"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="time-weather-container forecast">
+                            <p class="h2" style="font-size: 12px">De næste 7 dage</p>
+                            <div class="inner-forecast" id="forecast"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
