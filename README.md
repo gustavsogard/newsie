@@ -1,4 +1,4 @@
-Dette er kodebasen for min, Gustav Søgård (S160921), aflevering til hjemmeeksamenen for faget "Programmering og udvikling af små systemer samt databaser (BINTO1610D)".
+Dette er kodebasen for afleveringen til hjemmeeksamenen af studienummer S160921 for faget "Programmering og udvikling af små systemer samt databaser (BINTO1610D)".
 
 For at få den bedste oplevelse med denne kodebase, bedes du:
 1) Installere Visual Studio Code plugin'et "Live Server" af Ritwick Dey.
